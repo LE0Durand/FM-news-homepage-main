@@ -66,6 +66,37 @@ a {
   color: var(--soft-orange);
 }
 
+.burger-icon {
+  display: none;
+}
+
+.navigation__menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--off-white);
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  display: none;
+}
+
+.navigation__menu--close {
+  width: 32px;
+  height: 32px;
+  justify-self: flex-end;
+}
+
+.navigation__menu__links {
+  margin-top: 100px;
+}
+
+.navigation__link {
+  padding: 16px;
+}
+
 /*    */
 /*MAIN*/
 /*    */
@@ -255,5 +286,15 @@ a {
   .sidebar {
     max-width: 80%;
     justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .burger-icon {
+    display: block;
+  }
+
+  .navigation__links {
+    display: none;
   }
 }
